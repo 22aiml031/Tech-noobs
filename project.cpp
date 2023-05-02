@@ -135,7 +135,7 @@ void get_data(int i)        //Function for receiving data from user and populati
 void show_data(int searchkey)      //Function for showing data on the screen.
 {
   int i=searchkey;
-  cout<<i<<"    ";
+  cout<<"\n"<<i<<"    "<<endl;
   cout<<rec[i].rollno<<"\t";
   cout<<setw(10)<<rec[i].name<<"\t";
   cout<<rec[i].fname<<"\t";
@@ -162,16 +162,17 @@ void add_student()         //This function is used to add record of new student.
 {
   for(int i=0;i<=ts;i++)
  {
-    get_data(i);          //Loop was processed 5 times to get input for 5 students.
+    get_data(i);
+    cout<<"\n"<<endl;        //Loop was processed 5 times to get input for 5 students.
   }
 
   cout<<endl;
   cout<<"--------------------------------------------------------------------------------"<<endl;
   cout<<"---------------------------Student record Table---------------------------------"<<endl;
   cout<<"--------------------------------------------------------------------------------"<<endl;
-  cout<<setw(15)<<left<<"ID"<<endl << setw(15)<<left<<"Roll" << endl
-    <<setw(15)<<left<<"Name" <<endl <<setw(15)<<left<<"Father" << endl <<setw(15)<<left<<"Cell no."<<
-    endl<<setw(15)<<left<<"DOB"<<endl <<setw(15)<<left<<"Address\n\n"<<endl;
+  cout<<setw(15)<<left<<"\nID"<<endl << setw(15)<<left<<"\nRoll" <<endl
+    <<setw(15)<<left<<"\nName" <<endl <<setw(15)<<left<<"\nFather" <<endl <<setw(15)<<left<<"\nCell no."<<
+    endl<<setw(15)<<left<<"\nDOB"<<endl <<setw(15)<<left<<"\nAddress\n\n"<<endl;
 
 
 
